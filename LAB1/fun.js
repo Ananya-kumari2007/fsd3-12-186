@@ -9,3 +9,5 @@
  console.log(toWords(5));
  console.log(toWords(2));
  console.log(toWords(7));
+ // frontend - flask , vue ,angular,(css) bootstrap,html,event,tailwind
+//backend - node js, springboot,fastAPI, D jango, PHP ,  
