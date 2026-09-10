@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Product Enquiry</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            display: flex;
+            gap: 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h2,
+        .form h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .form {
+            flex: 1;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #162d6b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3a8a;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>Have a question about our products? We are here to help!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="info">
+            <h2>Product Enquiry</h2>
+
+            <p>
+                Interested in our products? Fill out the enquiry form
+                and our team will get back to you soon.
+            </p>
+
+            <p>📍 <b>Address:</b> Ghaziabad, Uttar Pradesh, India</p>
+
+            <p>📞 <b>Phone:</b> +91 98765 43210</p>
+
+            <p>📧 <b>Email:</b> enquiry@example.com</p>
+
+            <p>🕒 <b>Working Hours:</b> Mon - Sat, 10 AM - 6 PM</p>
+        </div>
+
+        <div class="form">
+            <h2>Send Your Enquiry</h2>
+
+            <form onsubmit="submitForm(event)">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <input type="tel" placeholder="Phone Number" required>
+
+                <select required>
+                    <option value="">Select Product</option>
+                    <option>Product 1</option>
+                    <option>Product 2</option>
+                    <option>Product 3</option>
+                    <option>Other</option>
+                </select>
+
+                <textarea placeholder="Write your enquiry..." required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Your Company. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("Thank you! Your product enquiry has been submitted.");
+        }
+    </script>
+
+</body>
+</html>
+
